@@ -1,3 +1,52 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "standard",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "plugins": ["tailwindcss"],
+  "rules": {
+    "tailwindcss/classnames-order": [
+      "error",
+      {
+        "order": [
+          "custom-forms",
+          "position",
+          "top",
+          "right",
+          "bottom",
+          "left",
+          "z-index",
+          "display",
+          "float",
+          "clear",
+          "margin",
+          "padding",
+          "width",
+          "height",
+          "min-width",
+          "min-height",
+          "max-width",
+          "max-height",
+          "font-size",
+          "font-family",
+          "font-weight",
+          "line-height",
+          "letter-spacing",
+          "text-align",
+          "text-color",
+          "background-color",
+          "border-color",
+          "border-width",
+          "border-radius",
+          "box-shadow",
+          "opacity",
+          "transform",
+          "transition"
+        ]
+      }
+    ]
+  }
 }
