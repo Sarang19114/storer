@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			primary: '#3b86f7',
   			brand: {
   				'100': '#4F46E5',
   				DEFAULT: '#3B82F6'
@@ -33,7 +34,8 @@ const config: Config = {
   			}
   		},
   		fontFamily: {
-  			poppins: ['var(--font-poppins)']
+  			poppins: ['var(--font-poppins)'],
+  			display: ['Inter', 'sans-serif']
   		},
   		boxShadow: {
   			'drop-1': '0px 10px 30px 0px rgba(66, 71, 97, 0.1)',
