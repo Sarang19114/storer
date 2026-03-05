@@ -34,7 +34,7 @@ export default function LandingPage() {
         {/* Dashboard Mockup */}
         <div className="max-w-5xl mx-auto mt-20 relative">
           <div className="glass p-4 rounded-2xl shadow-2xl overflow-hidden">
-            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 aspect-[16/9] flex">
+            <div className="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 min-h-[22rem] md:min-h-0 md:aspect-[16/9] flex flex-col md:flex-row">
               <aside className="w-48 border-r border-slate-200 p-4 hidden md:block">
                 <div className="space-y-4">
                   <div className="h-2 w-24 bg-primary/20 rounded"></div>
@@ -43,33 +43,33 @@ export default function LandingPage() {
                   <div className="h-8 w-full bg-white border border-slate-200 rounded-lg"></div>
                 </div>
               </aside>
-              <main className="flex-1 p-6">
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <span className="material-symbols-outlined text-primary text-4xl mb-4">folder</span>
+              <main className="flex-1 p-4 sm:p-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span className="material-symbols-outlined text-primary text-3xl sm:text-4xl mb-4">folder</span>
                     <p className="font-bold text-slate-900">Documents</p>
                     <p className="text-xs text-slate-500">1,204 items</p>
                   </div>
-                  <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <span className="material-symbols-outlined text-primary text-4xl mb-4">image</span>
+                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span className="material-symbols-outlined text-primary text-3xl sm:text-4xl mb-4">image</span>
                     <p className="font-bold text-slate-900">Images</p>
                     <p className="text-xs text-slate-500">458 items</p>
                   </div>
-                  <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                    <span className="material-symbols-outlined text-primary text-4xl mb-4">video_library</span>
+                  <div className="bg-white p-4 sm:p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <span className="material-symbols-outlined text-primary text-3xl sm:text-4xl mb-4">video_library</span>
                     <p className="font-bold text-slate-900">Media</p>
                     <p className="text-xs text-slate-500">82 items</p>
                   </div>
                 </div>
-                <div className="mt-8 space-y-3">
-                  <div className="h-12 w-full bg-white border border-slate-200 rounded-lg flex items-center px-4 gap-4">
+                <div className="mt-6 sm:mt-8 space-y-3">
+                  <div className="h-10 sm:h-12 w-full bg-white border border-slate-200 rounded-lg flex items-center px-4 gap-4">
                     <span className="material-symbols-outlined text-primary text-sm">description</span>
                     <div className="h-2 w-32 bg-slate-200 rounded"></div>
                     <div className="h-2 w-20 bg-slate-100 rounded ml-auto"></div>
                   </div>
-                  <div className="h-12 w-full bg-white border border-slate-200 rounded-lg flex items-center px-4 gap-4 opacity-50">
+                  <div className="h-10 sm:h-12 w-full bg-white border border-slate-200 rounded-lg flex items-center px-4 gap-4 opacity-50">
                     <span className="material-symbols-outlined text-primary text-sm">description</span>
-                    <div className="h-2 w-48 bg-slate-200 rounded"></div>
+                    <div className="h-2 w-full max-w-48 bg-slate-200 rounded"></div>
                   </div>
                 </div>
               </main>
@@ -124,8 +124,8 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="bg-white border border-slate-200 card-shadow rounded-[2rem] overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="p-12 lg:p-20">
-                <h2 className="text-4xl font-bold mb-6 text-slate-900">2 GB free. Need more? We've got you.</h2>
+              <div className="p-6 sm:p-10 lg:p-20">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-slate-900">2 GB free. Need more? We've got you.</h2>
                 <p className="text-slate-500 mb-8">Every account starts with 2 GB at no cost. Running low? Upgrade to a paid plan — or place an order and we'll ship a physical SSD straight to your address.</p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3 text-slate-900 font-medium">
@@ -146,21 +146,21 @@ export default function LandingPage() {
                   See storage plans
                 </a>
               </div>
-              <div className="bg-slate-50 border-l border-slate-100 p-12">
-                <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-                  <div className="flex items-center justify-between mb-8">
+              <div className="bg-slate-50 border-t border-slate-100 lg:border-t-0 lg:border-l p-6 sm:p-10 md:p-12">
+                <div className="bg-white rounded-2xl p-5 sm:p-8 border border-slate-200 shadow-sm">
+                  <div className="flex items-start sm:items-center justify-between gap-3 mb-8">
                     <h4 className="font-bold text-slate-900">Usage Summary</h4>
                     <span className="text-amber-500 text-sm font-bold">90% Used</span>
                   </div>
                   <div className="flex items-center justify-center mb-10">
-                    <div className="relative size-48">
+                    <div className="relative size-40 sm:size-48">
                       <svg className="size-full" viewBox="0 0 36 36">
                         <circle className="stroke-slate-100" cx="18" cy="18" fill="none" r="15.9" strokeWidth="3"></circle>
                         <circle className="stroke-primary" cx="18" cy="18" fill="none" r="15.9" strokeDasharray="90, 100" strokeLinecap="round" strokeWidth="3"></circle>
                       </svg>
                       <div className="absolute inset-0 flex flex-col items-center justify-center">
-                        <span className="text-3xl font-black text-slate-900">1.8 GB</span>
-                        <span className="text-xs text-slate-500">of 2 GB free</span>
+                        <span className="text-[2rem] sm:text-3xl font-black text-slate-900">1.8 GB</span>
+                        <span className="text-xs sm:text-sm text-slate-500">of 2 GB free</span>
                       </div>
                     </div>
                   </div>
@@ -186,13 +186,13 @@ export default function LandingPage() {
                       </div>
                       <span className="text-sm font-bold text-slate-900">370 MB</span>
                     </div>
-                    <div className="mt-4 p-3 bg-amber-50 border border-amber-100 rounded-xl flex items-center gap-3">
-                      <span className="material-symbols-outlined text-amber-500 text-lg">warning</span>
+                    <div className="mt-4 p-3 sm:p-4 bg-amber-50 border border-amber-100 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                      <span className="material-symbols-outlined text-amber-500 text-lg shrink-0">warning</span>
                       <div className="flex-1 min-w-0">
-                        <p className="text-xs font-semibold text-amber-700">Almost full!</p>
-                        <p className="text-[11px] text-amber-600">Upgrade or order an SSD to keep going.</p>
+                        <p className="text-sm font-semibold text-amber-700">Almost full!</p>
+                        <p className="text-xs text-amber-600">Upgrade or order an SSD to keep going.</p>
                       </div>
-                      <a href="#pricing" className="shrink-0 text-[11px] font-bold text-white bg-primary px-2.5 py-1.5 rounded-lg hover:opacity-90 transition-opacity">Upgrade</a>
+                      <a href="#pricing" className="w-full sm:w-auto text-center shrink-0 text-xs font-bold text-white bg-primary px-3 py-2 rounded-lg hover:opacity-90 transition-opacity">Upgrade</a>
                     </div>
                   </div>
                 </div>
